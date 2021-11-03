@@ -12,26 +12,26 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="hd">
-            <a class="logo" href="/home/home.html">
-                <img src="https://i.ibb.co/wYZW5rq/Logo-Branco.png" alt="Logo-Preto">
-            </a>
-            <nav id="nav">
-                <button id="btmenu">Menu</button>
-                <ul id="menu">
-                    <li class="nav-item"><a href="#" onclick="clicknav(this)" class="nav-link active"
-                            aria-current="page">Loja</a></li>
-                    <li class="nav-item"><a href="#" onclick="clicknav(this)" class="nav-link">Sobre</a></li>
-                    <li class="nav-item"><a href="#" onclick="clicknav(this)" class="nav-link">Fale conosco</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
+    <header class="hd">
+        <a class="logo" href="/home/home.html">
+            <img src="./images/LogoBranco.png" alt="Logo-Branco">
+        </a>
+        <nav id="nav">
+            <button id="btmenu">Menu</button>
+            <ul id="menu">
+                <li class="nav-item"><a href="#" onclick="clicknav(this)" class="nav-link active"
+                        aria-current="page">Loja</a></li>
+                <li class="nav-item"><a href="#" onclick="clicknav(this)" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#" onclick="clicknav(this)" class="nav-link">Fale conosco</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="search">
-        <img src="/home/images/search-icon.png" alt="">
-        <input id="search-box" type="text" placeholder="PEÇAS, ACESSÓRIOS...">
+    <div class="search-container">
+        <div class="search">
+            <img src="/home/images/search-icon.png" alt="">
+            <input id="search-box" type="text" placeholder="PEÇAS, ACESSÓRIOS...">
+        </div>
     </div>
 
     <div class="first-items">
@@ -52,6 +52,80 @@
         </div>
     </div>
 
+    <section class="slider-section">
+        <div class="texto">
+            <h2 style="text-justify: inter-word;">Confira nossas mais novas coleções, preparadas especialmente para você!</h2>
+            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+        </div>
+        <div class="slider">
+            <div class="dots" style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+              </div>
+              
+            <div class="slide-container fade">
+                <img src="./images/slide1.jpg" alt="">
+            </div>
+            <div class="slide-container fade">
+                <img src="./images/slide2.jpg" alt="">
+            </div>
+            <div class="slide-container fade">
+                <img src="./images/slide3.png" alt="">
+            </div>
+            <div class="slide-container fade">
+                <img src="./images/slide4.jpg" alt="">
+            </div>
+            <div class="slide-container fade">
+                <img src="./images/slide5.jpg" alt="">
+            </div>
+            <div class="slide-container fade">
+                <img src="./images/slide6.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <div>
+            <table>
+                <tr>
+                    <th>Sobre nós</th>
+                    <th>Fale conosco</th>
+                    <th>Dúvidas frequentes</th>
+                </tr>
+                <tr>
+                    <td><a href="/home/home.html">Nossa trajetória</a></td>
+                    <td><a href="/home/home.html">Contato</a></td>
+                    <td><a href="/home/home.html">Quem somos?</a></td>
+                </tr>
+                <tr>
+                    <td><a href="/home/home.html">Nossa equipe</a></td>
+                    <td><a href="/home/home.html">Localização</a></td>
+                    <td><a href="/home/home.html">Política de privacidade</a></td>
+                </tr>
+                <tr>
+                    <td><a href="/home/home.html">Nossas conquistas</a></td>
+                    <td><a href="/home/home.html">Atendimento online</a></td>
+                    <td><a href="/home/home.html">Formas de pagamento</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a href="/home/home.html">Programa de fidelidade</a></td>
+                    <td><a href="/home/home.html">Termos e condições</a></td>
+                </tr>
+            </table>
+            <p>©2021 Todos os direitos reservados ThonnyStudios</p>
+        </div>
+        <div>
+
+        </div>
+    </section>
+
+    
     <script src="./js/home.js"></script>
 </body>
 

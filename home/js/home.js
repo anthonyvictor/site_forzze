@@ -44,6 +44,40 @@ addFirstItem('#e3d768','Moda Verão','/home/images/Croptop_800x.png')
 addFirstItem('#ff00aa','Moda Outono','/home/images/Croptop6_800x.png')
 addFirstItem('#3471eb','Moda Inverno','/home/images/Croptop5_800x.png')
 
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("slide-container");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // let btnMenu = document.getElementById('btmenu')
 // console.log(btnMenu)
 
