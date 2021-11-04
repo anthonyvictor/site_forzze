@@ -15,34 +15,41 @@ function clicknav(e){
 }
 
 const lista = document.getElementById('lista')
-addFirstItem = function(cor, texto, img){
+addFirstItem = function(cor, texto, subtexto, img){
     let item = document.createElement('li')
     item.classList.add('item')
     let div = document.createElement('div')
+    let span = document.createElement('span')
 
     let txt = document.createElement('label')
     txt.innerHTML = texto
 
-    let a = document.createElement('a')
-    a.href = '/home/home.html'
-    a.innerHTML = 'Adquira já ->'
+
+
+    // let a = document.createElement('a')
+    // a.href = '/home/home.html'
+    // a.innerHTML = 'Adquira já ->'
+
+    let sub = document.createElement('p')
+    sub.innerHTML = subtexto
 
     item.style.backgroundColor = cor
     let imagem = document.createElement('img')
+    imagem.className = 'imgItem'
     imagem.src = img
     div.appendChild(txt)
-    div.appendChild(a)
+    div.appendChild(sub)
     item.appendChild(div)
-    item.appendChild(imagem)
-
+    span.appendChild(imagem)
+    item.appendChild(span)
     lista.appendChild(item)
 
     console.log(item)
 }
 
-addFirstItem('#e3d768','Moda Verão','/home/images/Croptop_800x.png')
-addFirstItem('#ff00aa','Moda Outono','/home/images/Croptop6_800x.png')
-addFirstItem('#3471eb','Moda Inverno','/home/images/Croptop5_800x.png')
+addFirstItem('#FFC86B','Moda Verão', 'Confira as tendências mais quentes!', '/home/images/Croptop_800x.png')
+addFirstItem('#E8A4A2','Moda Outono', 'Chuva chegando? Não se preocupe!','/home/images/Croptop6_800x.png')
+addFirstItem('#A2D6E8','Moda Inverno', 'Vai um frio aí? Dá uma olhadinha!','/home/images/Croptop5_800x.png')
 
 
 var slideIndex = 0;
@@ -67,7 +74,24 @@ function showSlides() {
 
 
 
+function increase_brightness(hex, percent){
+  // strip the leading # if it's there
+  hex = hex.replace(/^\s*#|\s*$/g, '');
 
+  // convert 3 char codes --> 6, e.g. `E0F` --> `EE00FF`
+  if(hex.length == 3){
+      hex = hex.replace(/(.)/g, '$1$1');
+  }
+
+  var r = parseInt(hex.substr(0, 2), 16),
+      g = parseInt(hex.substr(2, 2), 16),
+      b = parseInt(hex.substr(4, 2), 16);
+
+  return '#' +
+     ((0|(1<<8) + r + (256 - r) * percent / 100).toString(16)).substr(1) +
+     ((0|(1<<8) + g + (256 - g) * percent / 100).toString(16)).substr(1) +
+     ((0|(1<<8) + b + (256 - b) * percent / 100).toString(16)).substr(1);
+}
 
 
 
