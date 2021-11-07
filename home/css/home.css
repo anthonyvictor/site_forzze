@@ -393,9 +393,9 @@ body {
     margin-top: 50px;
     bottom: 0;
     background-color: #080b0d;
-    height: 250px;
+    height: 100%k;
     overflow-x: hidden;
-  
+    
 }
 
 .footer table td{
@@ -667,6 +667,79 @@ body {
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
         max-width: 700px;
     }
+
+
+    
+.footer{
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    padding: 10px;
+    color: white;
+    margin-top: 10px;
+    bottom: 0;
+    background-color: #080b0d;
+    height: 250px;
+    overflow-x: hidden;
+  
+}
+
+.footer table td{
+    padding: 8px;
+}
+
+.footer table th{
+    padding: 8px;
+    text-align: left;
+}
+
+.footer table td a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer p{
+    margin-top: 50px;
+}
+
+.footer .dir{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin: 10px;
+    align-items: center;
+}
+
+.footer .dir .icons a{
+   
+    color: white;
+    
+}
+
+.footer .dir .icons{
+   
+    color: white;
+    font-size: 3.2rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 180px;
+}
+
+.footer i{
+    cursor: pointer;
+}
+
+.footer i:hover{
+    color: #A2D6E8;
+}
+
+.footer .dir p{
+    font-size: small;
+    margin-top: 0px;
+    width: 180px;
+    text-align: center;
+}
+
 }
 
 
