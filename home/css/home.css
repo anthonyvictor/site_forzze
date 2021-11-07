@@ -6,9 +6,10 @@
 
 body {
     width: 100%;
-    height: 10vh;
+    height: 100%;
     background-color: #DABFFF;
-    /* overflow-x: hidden; */
+    display: flex;
+    flex-direction: column;
 }
 
 .logo {
@@ -392,10 +393,12 @@ body {
     color: white;
     margin-top: 50px;
     bottom: 0;
+    left: 0;
     background-color: #080b0d;
     height: 100%;
+    width: 100%;
     overflow-x: hidden;
-    
+    flex-grow: 2;
 }
 
 .footer table td{
@@ -413,14 +416,17 @@ body {
 }
 
 .footer p{
-    margin-top: 50px;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .footer .dir{
-    margin: 50px 0px 0px 50px;
+    margin: 50px 0px 0px 50px;;
     display: flex;
     flex-direction: column;
     gap: 1px;
+    flex-grow: 1;
 }
 
 .footer .dir .icons a{
@@ -672,17 +678,10 @@ body {
     
 .footer{
     flex-direction: column-reverse;
-    justify-content: flex-start;
     padding: 10px;
-    color: white;
     margin-top: 10px;
-    bottom: 0;
-    background-color: #080b0d;
-    height: 250px;
-    overflow-x: hidden;
-  
 }
-
+/* 
 .footer table td{
     padding: 8px;
 }
@@ -699,6 +698,10 @@ body {
 
 .footer p{
     margin-top: 50px;
+} */
+
+.footer .esq{
+    width: calc(100% - 20px);
 }
 
 .footer .dir{
@@ -707,8 +710,11 @@ body {
     gap: 1px;
     margin: 10px;
     align-items: center;
+    flex-grow: 0;
+    width: calc(100% - 40px);
 }
 
+/* 
 .footer .dir .icons a{
    
     color: white;
@@ -738,7 +744,7 @@ body {
     margin-top: 0px;
     width: 180px;
     text-align: center;
-}
+} */
 
 }
 
