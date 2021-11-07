@@ -396,9 +396,7 @@ body {
     left: 0;
     background-color: #080b0d;
     height: 100%;
-    width: 100%;
     overflow-x: hidden;
-    flex-grow: 2;
 }
 
 .footer table td{
