@@ -43,8 +43,6 @@ addFirstItem = function(cor, texto, subtexto, img){
     span.appendChild(imagem)
     item.appendChild(span)
     lista.appendChild(item)
-
-    console.log(item)
 }
 
 addFirstItem('#FFC86B','Moda Verão', 'Confira as tendências mais quentes!', '/home/images/Croptop_800x.png')
@@ -94,8 +92,63 @@ function increase_brightness(hex, percent){
 }
 
 
+const items = document.querySelectorAll('.item');
+
+const myObserver = new ResizeObserver(entries => {
+  for (let entry of entries) {
+    let item = entry.target
+    let w = entry.contentRect.width
+    
+    if (w >= 420) {
+      if(item.classList.contains('item-imgBig') == false){
+        item.classList.add('item-imgBig')
+      }
+    } else {
+      console.log('menor')
+      item.classList.remove('item-imgBig')
+    }
+    
+    // const width = Math.floor(entry.contentRect.width);
+    // const height = Math.floor(entry.contentRect.height);
+    // entry.target.value = `I'm ${ width }px and ${ height }px tall`;
+  }
+});
+
+items.forEach(i => {
+  myObserver.observe(i);
+});
+
+document.querySelector('.ham').addEventListener('click', () => {
+  let nav = document.getElementById('nav')
+  nav.classList.toggle('active')
+})
 
 
+// document.addEventListener('DOMContentLoaded', () => {
+//   let ro = new ResizeObserver(document.querySelectorAll('.item'), entries => {
+//     console.log(entries)
+//   })
+ 
+// })
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   let ro = new ResizeObserver(handleResize)
+//   ro.observe(document.querySelectorAll('.item'))
+// })
+
+// function handleResize(entries){
+//   console.log(entries)
+//   console.log(entries[0].target)
+// }
+
+// const items = document.getElementsByClassName('item')
+// items.addEventListener('resize', function(){
+//     console.log(i.getAttribute('width'))
+//   })
+
+// .addEventListener(item,function(){
+
+// })
 
 
 

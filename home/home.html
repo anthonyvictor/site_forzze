@@ -18,15 +18,15 @@
         <a class="logo" href="/home/home.html">
             <img src="./images/LogoBranco.png" alt="Logo-Branco">
         </a>
-        <nav id="nav">
-            <button id="btmenu">Menu</button>
-            <ul id="menu">
-                <li class="nav-item"><a href="#" onclick="clicknav(this)" class="nav-link active"
+
+        <a class="ham" href="javascript:void(0);"><i class="fas fa-bars"></i></a>
+
+        <ul id="nav" class="nav">
+                <li class="nav-item"><a href="#" onclick="clicknav(this)" class="nav-link"
                         aria-current="page">Loja</a></li>
                 <li class="nav-item"><a href="#" onclick="clicknav(this)" class="nav-link">Sobre</a></li>
                 <li class="nav-item"><a href="#" onclick="clicknav(this)" class="nav-link">Fale conosco</a></li>
-            </ul>
-        </nav>
+        </ul>
     </header>
 
     <div class="search-container">
@@ -134,7 +134,6 @@
         </div>
     </section>
 
-    
     <script src="./js/home.js"></script>
 </body>
 
