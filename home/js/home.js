@@ -45,9 +45,9 @@ addFirstItem = function(cor, texto, subtexto, img){
     lista.appendChild(item)
 }
 
-addFirstItem('#FFC86B','Moda Verão', 'Confira as tendências mais quentes!', '/home/images/Croptop_800x.png')
-addFirstItem('#E8A4A2','Moda Outono', 'Chuva chegando? Não se preocupe!','/home/images/Croptop6_800x.png')
-addFirstItem('#A2D6E8','Moda Inverno', 'Vai um frio aí? Dá uma olhadinha!','/home/images/Croptop5_800x.png')
+addFirstItem('#FFC86B','Moda Verão', 'Confira as tendências mais quentes!', './images/Croptop_800x.png')
+addFirstItem('#E8A4A2','Moda Outono', 'Chuva chegando? Não se preocupe!','./images/Croptop6_800x.png')
+addFirstItem('#A2D6E8','Moda Inverno', 'Vai um frio aí? Dá uma olhadinha!','./images/Croptop5_800x.png')
 
 
 var slideIndex = 0;
