@@ -1,3 +1,3 @@
-# Modelo de site para a empresa Forzze (Somente modelo)
+# Site Forzze
 
-### site_forzze
+### Modelo de site para a empresa Forzze (Somente modelo)
